@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/colorPickerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="16dp"
+        android:text="Pick a color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loggerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Show Logger"
+        app:layout_constraintEnd_toEndOf="@+id/colorPickerBtn"
+        app:layout_constraintStart_toStartOf="@+id/colorPickerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerBtn" />
+
+    <Button
+        android:id="@+id/backgroundColorChangeBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Color of Background"
+        app:layout_constraintEnd_toEndOf="@+id/loggerBtn"
+        app:layout_constraintStart_toStartOf="@+id/loggerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loggerBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
